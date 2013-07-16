@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+import os
+import os.path
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 AUTHOR = "Donald Stufft"
 SITENAME = "caremad"
@@ -51,4 +55,11 @@ THEME = "themes/caremad"
 PLUGIN_PATH = "plugins"
 PLUGINS = [
     "assets",
+]
+
+ASSET_CONFIG = [
+    ("COMPASS_BIN", os.path.join(ROOT_DIR, "bin", "compass")),
+    ("COMPASS_PLUGINS", [
+        "compass-normalize",
+    ]),
 ]
