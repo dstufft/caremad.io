@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <title>{% block title %}{% endblock title %} &middot; {{ SITENAME }}</title>
+
+    {% assets filters="compass", output="css/style.css", "css/style.scss" %}
+      <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}" />
+    {% endassets %}
+    <link rel="stylesheet" href="//cloud.typography.com/7226432/647402/css/fonts.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" />
+  </head>
+  <body>
+    <header id="banner">
+      <h1>
+        <a href="{{ SITEURL }}/">
+          {{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
+        </a>
+      </h1>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

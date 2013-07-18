@@ -1,0 +1,113 @@
+@import "compass/typography/links/hover-link";
+@import "compass/typography/links/unstyled-link";
+@import "compass/typography/lists/bullets";
+@import "normalize";
+
+@import "_monokai";
+
+
+$base-color: #333333;
+$demphasized-color: tint($base-color, 50);
+
+$max-width: 30em;
+
+
+body {
+    background: image-url('images/cream_dust.png');
+    color: $base-color;
+
+    border-top: 5px solid $base-color;
+
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6em;
+
+    padding: 0 2em 0 2em;
+}
+
+a {
+    @include hover-link;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2.5em;
+    font-weight: 400;
+}
+
+#banner {
+    max-width: $max-width;
+    margin: auto;
+    padding: 1em;
+
+    border-bottom: 1px dotted $base-color;
+
+    h1 {
+        font-family: "Archer SSm A", "Archer SSm B", serif;
+        font-weight: 400;
+        font-style: italic;
+
+        margin: 0;
+    }
+
+    a {
+        @include unstyled-link;
+    }
+}
+
+.entry-title {
+    margin: 1em 0 0 0;
+
+    font-weight: 400;
+
+    a {
+        @include unstyled-link;
+    }
+}
+
+.post-info {
+    margin: 0 0 2em 0;
+
+    font-size: 0.8em;
+    font-style: italic;
+
+    color: $demphasized-color;
+}
+
+.entry-content {
+    line-height: 1.5;
+
+    img {
+        max-width: 100%;
+    }
+
+    pre {
+        padding: 0.5em 1.4em 0.5em 1.4em;
+
+        white-space: pre;
+        overflow-x: scroll;
+
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 0.7em;
+    }
+}
+
+// ####### Layout #######
+
+#content {
+    max-width: $max-width;
+    margin: auto;
+}
+
+
+.article-title {
+    margin-bottom: 0.25em;
+}
+
+.article-published {
+    font-style: italic;
+}

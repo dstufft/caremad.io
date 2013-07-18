@@ -60,4 +60,7 @@ ASSET_CONFIG = [
     ("COMPASS_PLUGINS", [
         "compass-normalize",
     ]),
+    ("COMPASS_CONFIG", {
+        "http_path": "/theme/",
+    }),
 ]
