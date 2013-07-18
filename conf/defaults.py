@@ -6,7 +6,7 @@ import os.path
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 AUTHOR = "Donald Stufft"
-SITENAME = "caremad"
+SITENAME = "Caremad"
 SITEURL = ""
 
 TIMEZONE = "America/New_York"
@@ -48,9 +48,7 @@ TAG_SAVE_AS = False
 
 FILENAME_METADATA = "(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)"
 
-
 THEME = "themes/caremad"
-
 
 PLUGIN_PATH = "plugins"
 PLUGINS = [
