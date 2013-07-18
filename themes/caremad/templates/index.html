@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div id="content">
+    <section>
+      <h2 class="section-title">Posts</h2>
+      <ol class="article-list">
+        {% for article in articles_page.object_list %}
+          <li>
+            <time class="article-published" datetime="{{ article.date|strftime('%Y-%m-%d') }}">
+              {{ article.date|strftime('%d %B %Y') }}
+            </time>
+            <h3 class="article-title">
+              <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}">
+                {{ article.title }}
+              </a>
+            </h3>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projects</h2>
+      <ul class="project-list">
+        {% for project, link, description in PROJECTS %}
+          <li>
+            <h3 class="project-title">
+              <a href="{{ link }}" title="{{ project }}">{{ project }}</a>
+            </h3>
+            <div class="project-description">{{ description }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+{% endblock content %}
