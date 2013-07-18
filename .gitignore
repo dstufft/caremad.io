@@ -1,6 +1,12 @@
+# Generated Python files
 *.py[co]
 
+# Generated Bundler files
 .bundle/
 bin/
 
+# Generated HTML website files
 output/
+
+# Copywritten & Licensed Font files
+themes/caremad/static/fonts/
