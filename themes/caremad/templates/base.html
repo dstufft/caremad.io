@@ -3,7 +3,7 @@
   <head>
     <title>{% block title %}{% endblock title %} &middot; {{ SITENAME }}</title>
 
-    {% assets filters="compass", output="css/style.css", "css/style.scss" %}
+    {% assets filters="compass,cssmin", output="css/style.min.css", "css/style.scss" %}
       <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}" />
     {% endassets %}
     <link rel="stylesheet" href="//cloud.typography.com/7226432/647402/css/fonts.css" />
