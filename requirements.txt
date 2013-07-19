@@ -1,0 +1,4 @@
+pelican>=3.2.2
+Markdown>=2.3.1
+cssmin>=0.1.4
+webassets>=0.8
