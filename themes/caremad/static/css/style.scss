@@ -9,7 +9,7 @@
 $base-color: #333333;
 $demphasized-color: tint($base-color, 50);
 
-$max-width: 30em;
+$max-width: 33em;
 
 
 body {
@@ -21,7 +21,7 @@ body {
     font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.6em;
+    font-size: 1.3em;
 
     padding: 0 2em 0 2em;
 }
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-content {
-    line-height: 1.5;
+    line-height: 1.6;
 
     img {
         max-width: 100%;
