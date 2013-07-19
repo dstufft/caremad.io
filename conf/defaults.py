@@ -24,6 +24,23 @@ PROJECTS = [
         "Warehouse", "https://github.com/dstufft/warehouse",
         "Next Generation Python Package Index",
     ),
+    (
+        "PyNaCl", "https://github.com/dstufft/pynacl",
+        "Python binding to the Networking and Cryptography (NaCl) library",
+    ),
+    (
+        "bcrypt", "https://github.com/dstufft/bcrypt",
+        "Modern password hashing for your software and your servers",
+    ),
+    (
+        "xmlrpc2", "https://github.com/dstufft/xmlrpc2",
+        "xmlrpc library for Python built on requests",
+    ),
+    (
+        "Slumber", "https://github.com/dstufft/slumber",
+        "A library that makes consuming a RESTful API easier and more "
+            "convenient",
+    )
 ]
 
 DEFAULT_PAGINATION = False
