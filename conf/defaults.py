@@ -62,6 +62,7 @@ PLUGIN_PATH = "plugins"
 PLUGINS = [
     "assets",
     "gzip_cache",
+    "optimize_images",
 ]
 
 ASSET_CONFIG = [
