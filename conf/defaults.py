@@ -61,6 +61,7 @@ THEME = "themes/caremad"
 PLUGIN_PATH = "plugins"
 PLUGINS = [
     "assets",
+    "gzip_cache",
 ]
 
 ASSET_CONFIG = [
