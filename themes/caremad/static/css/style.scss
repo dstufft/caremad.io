@@ -148,13 +148,20 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 100%;
     }
 
+    code, pre {
+        font-family: "Source Code Pro", sans-serif;
+    }
+
+    code {
+        white-space: pre-wrap;
+    }
+
     pre {
         padding: 0.5em 1.4em 0.5em 1.4em;
 
         white-space: pre;
         overflow-x: scroll;
 
-        font-family: "Source Code Pro", sans-serif;
         font-size: 0.7em;
 
         color: #ffffff;
