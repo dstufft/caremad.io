@@ -11,7 +11,7 @@ have even created [tools][1] to handle this "duplication".
 ## Python Libraries
 
 A Python library in this context is something that has been developed and
-released for others to use. You can find a number them on [PyPI][2] that others
+released for others to use. You can find a number of them on [PyPI][2] that others
 have made available. A library has a number of pieces of metadata that need to
 be provided in order to successfully distribute it. These are things such as
 the Name, Version, Dependencies, etc. The ``setup.py`` file gives you the
@@ -67,7 +67,7 @@ like:
 Here you have each dependency shown along with an exact version specifier.
 While a library tends to want to have wide open ended version specifiers an
 application wants very specific dependencies. It may not have mattered up
-front what version of requests what installed but you want the same version
+front what version of requests was installed but you want the same version
 to install in production as you developed and tested with locally.
 
 At the top of this file you'll also notice a
@@ -164,8 +164,8 @@ its abstract dependencies, combining them with its ``--index`` option and
 turning them into concrete dependencies and installing them.
 
 This method grants another powerful ability. Let's say you have two or more
-libraries that you develop as a unit but release separately, or maybe you're
-just split out part of a library into it's own piece and haven't officially
+libraries that you develop as a unit but release separately, or maybe you've
+just split out part of a library into its own piece and haven't officially
 released it yet. If your top level library still depends on just the name then
 you can install the development version when using the ``requirements.txt`` and
 the release version when not, using a file like:
@@ -178,7 +178,7 @@ the release version when not, using a file like:
 
 This will first install the bar library from https://github.com/foo/bar.git,
 making it equal to the name "bar", and then will install the local package,
-again combining it's dependencies with the ``--index`` option and installing
+again combining its dependencies with the ``--index`` option and installing
 but this time since the "bar" dependency has already been satisfied it will
 skip it and continue to use the in development version.
 
