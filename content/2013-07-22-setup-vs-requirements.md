@@ -109,7 +109,7 @@ manager collects and downloads. This would look something like:
     )
 
 Here you can see that an exact url to a dependency has been specified. Now if I
-used a library that specified it's dependencies this way and I wanted to change
+used a library that specified its dependencies this way and I wanted to change
 the "bar" library because of a bug that was affecting me or a feature I needed,
 I would not only need to fork the bar library, but I would also need to fork
 the library that depended on the bar library to update it. Even worse, if the
@@ -134,7 +134,7 @@ Setuptools has a feature similar to the Go example. It's called
         ],
     )
 
-This "feature" of setuptools removes the abstractness of it's dependencies and
+This "feature" of setuptools removes the abstractness of its dependencies and
 hardcodes an exact url from which you can fetch the dependency from. Now very
 similarly to Go if we want to modify packages, or simply fetch them from a
 different server we'll need to go in and edit each package in the dependency
