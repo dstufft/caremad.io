@@ -132,21 +132,12 @@ hands and give ourselves the perfect way to transmit trust, as long as PyPI is
 the authority over who owns a particular name then we **must** implicitly trust
 PyPI to tell us who is allowed to release which packages.
 
-
 All this said, we have not addressed whether it is *safe* to install this
 package. I could register a malicious package called "hackme" and sign it using
 any of the above methods and if you install it, even with the valid signature,
 *you* have decided to accept the consequences of running my code. It's
 important to remember that the only thing any of these systems are able to
 verify is that the package you've fetched is the package you wanted,
-nothing more.
-
-One thing we are ***not*** trusting is if it's *safe* to install this package.
-I could register a malicious package called "hackme" and sign it using any of
-the above methods and if you install it, even with the valid signature, **you**
-have decided that my package isn't going to do anything bad to your machine.
-It's important to remember that the only thing any of these systems are able to
-verify is that the package you've fetched is the package you asked for,
 nothing more.
 
 
