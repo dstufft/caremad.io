@@ -56,7 +56,7 @@ what key.
 
 However, this has a number of issues too. The first issue that a repository
 like PyPI would have with this system is simply one of scale. [Debian][5] or
-[RedHat][6] have a small pool of developers who are able to make new packages,
+[Red Hat][6] have a small pool of developers who are able to make new packages,
 making it easy to properly verify each person and sign their keys or otherwise
 give them access. PyPI allows *anyone* to sign up and make a release which
 makes verifying authors an unmanageable problem.
