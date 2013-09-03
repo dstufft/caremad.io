@@ -1,6 +1,8 @@
-Title: Why Package Signing is not the Holy Grail
-Category: Python
-Tags: packaging
+# Why Package Signing is not the Holy Grail
+
+- date: 2013-07-23
+
+-------------------------------------------------------------------------------
 
 Typically any time the topic of security and software packages, in my case
 typically Python packages, comes up someone seems to come up with the "helpful"

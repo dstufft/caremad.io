@@ -1,7 +1,8 @@
-Title: About Donald Stufft
-Slug: about
+# About Donald Stufft
 
-![Donald Stufft](|filename|/images/dstufft.jpg)
+-------------------------------------------------------------------------------
+
+![Donald Stufft](/images/dstufft.jpg)
 
 This is me, Donald.
 

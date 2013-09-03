@@ -1,7 +1,8 @@
-Title: setup.py vs requirements.txt
-Category: Python
-Tags: packaging
+# setup.py vs requirements.txt
 
+- date: 2013-07-22
+
+-------------------------------------------------------------------------------
 
 There's a lot of misunderstanding between ``setup.py`` and ``requirements.txt``
 and their roles. A lot of people have felt they are duplicated information and
@@ -17,18 +18,19 @@ be provided in order to successfully distribute it. These are things such as
 the Name, Version, Dependencies, etc. The ``setup.py`` file gives you the
 ability to specify this metadata like:
 
-    :::python
-    from setuptools import setup
+```python
+from setuptools import setup
 
-    setup(
-        name="MyLibrary",
-        version="1.0",
-        install_requires=[
-            "requests",
-            "bcrypt",
-        ],
-        # ...
-    )
+setup(
+    name="MyLibrary",
+    version="1.0",
+    install_requires=[
+        "requests",
+        "bcrypt",
+    ],
+    # ...
+)
+```
 
 This is simple enough, you have the required pieces of metadata declared.
 However something you don't see is a specification as to where you'll be
@@ -56,13 +58,14 @@ the other packaging related metadata. This is reflected in the abilities of a
 [pip][3] requirements file. A typical requirements file might look something
 like:
 
-    :::text
-    # This is an implicit value, here for clarity
-    --index https://pypi.python.org/simple/
+```text
+# This is an implicit value, here for clarity
+--index https://pypi.python.org/simple/
 
-    MyPackage==1.0
-    requests==1.2.0
-    bcrypt==1.0.2
+MyPackage==1.0
+requests==1.2.0
+bcrypt==1.0.2
+```
 
 Here you have each dependency shown along with an exact version specifier.
 While a library tends to want to have wide open ended version specifiers an
@@ -103,10 +106,11 @@ where an abstract requirement should be used can be found in the
 allows you to specify your imports via an url inside the code which the package
 manager collects and downloads. This would look something like:
 
-    :::go
-    import (
-            "github.com/foo/bar"
-    )
+```go
+import (
+    "github.com/foo/bar"
+)
+```
 
 Here you can see that an exact url to a dependency has been specified. Now if I
 used a library that specified its dependencies this way and I wanted to change
@@ -123,16 +127,17 @@ different "bar".
 Setuptools has a feature similar to the Go example. It's called
 [dependency links][5] and it looks like this:
 
-    :::python
-    from setuptools import setup
+```python
+from setuptools import setup
 
-    setup(
-        # ...
-        dependency_links = [
-            "http://packages.example.com/snapshots/",
-            "http://example2.com/p/bar-1.0.tar.gz",
-        ],
-    )
+setup(
+    # ...
+    dependency_links = [
+        "http://packages.example.com/snapshots/",
+        "http://example2.com/p/bar-1.0.tar.gz",
+    ],
+)
+```
 
 This "feature" of setuptools removes the abstractness of its dependencies and
 hardcodes an exact url from which you can fetch the dependency from. Now very
@@ -153,10 +158,11 @@ turns out pip requirements file have a construct to handle just such a case.
 Given a directory with a ``setup.py`` inside of it you can write a requirements
 file that looks like:
 
-    :::text
-    --index https://pypi.python.org/simple/
+```text
+--index https://pypi.python.org/simple/
 
-    -e .
+-e .
+```
 
 Now your ``pip install -r requirements.txt`` will work just as before. It will
 first install the library located at the file path ``.`` and then move on to
@@ -170,11 +176,12 @@ released it yet. If your top level library still depends on just the name then
 you can install the development version when using the ``requirements.txt`` and
 the release version when not, using a file like:
 
-    :::text
-    --index https://pypi.python.org/simple/
+```text
+--index https://pypi.python.org/simple/
 
-    -e https://github.com/foo/bar.git#egg=bar
-    -e .
+-e https://github.com/foo/bar.git#egg=bar
+-e .
+```
 
 This will first install the bar library from https://github.com/foo/bar.git,
 making it equal to the name "bar", and then will install the local package,
