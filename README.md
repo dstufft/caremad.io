@@ -13,12 +13,11 @@ Installation
 2. Install the Python requirements:
 
 ```bash
-    $ pip install -r requirements.txt
+    $ make install
 ```
 
-3. Install the Non Python Requirements::
+3. Start the LiquidLuck server
 
 ```bash
-    $ brew install optipng
-    $ brew install libjpeg
+    $ make serve
 ```

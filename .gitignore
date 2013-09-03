@@ -6,7 +6,7 @@
 bin/
 
 # Generated HTML website files
-output/
+deploy/
 
 # Copywritten & Licensed Font files
 themes/caremad/static/fonts/
