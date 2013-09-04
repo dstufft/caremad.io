@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <title>{% block title %}{% endblock title %} &middot; {{ SITENAME }}</title>
+    <title>{% block title %}{% endblock title %} &middot; {{ site.name }}</title>
 
-    {% if FEED_ALL_ATOM %}
-      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-    {% endif %}
-
-    {% assets filters="compass,cssmin", output="css/style.min.css", "css/style.scss" %}
-      <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}" />
-    {% endassets %}
+    <link rel="stylesheet" href="{{ static_url('css/style.css') }}" />
     <link rel="stylesheet" href="//cloud.typography.com/7226432/647402/css/fonts.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" />
   </head>
   <body>
     <header id="banner">
       <h1>
-        <a href="{{ SITEURL }}/">
-          {{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
-        </a>
+        <a href="{{ site.url }}/">{{ site.name }}</a>
       </h1>
     </header>
 
-    {% block content %}
-    {% endblock %}
+    {%- block main %}
+    {% endblock -%}
 
     <footer id="footer">
-      <a href="{{ SITEURL }}/about/" title="About Donald Stufft" class="about">Donald Stufft?</a>
+      <a href="/about/" title="About Donald Stufft" class="about">Donald Stufft?</a>
       <a href="mailto:donald@stufft.io" class="contact">Get in Touch</a>
     </footer>
 

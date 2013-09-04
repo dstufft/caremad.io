@@ -5,8 +5,11 @@
 .bundle/
 bin/
 
+# Generated SASS/Compass Files
+_themes/*/.sass-cache
+
 # Generated HTML website files
 deploy/
 
 # Copywritten & Licensed Font files
-themes/caremad/static/fonts/
+_themes/caremad/static/fonts/

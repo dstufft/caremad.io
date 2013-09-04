@@ -9,7 +9,7 @@ config:
     static_prefix: /static/
     permalink: "blog/{{filename}}/"
     relative_url: false
-    perpage: 30
+    perpage: 10000000000000000000000000
     feedcount: 20
     timezone: "-05:00"
 
@@ -38,14 +38,25 @@ writer:
         # archive_output: archive.html
 
 theme:
-    name: default
+    name: caremad
 
     # theme variables are defined by theme creator
     # you can access theme in template with ``theme`` namespace
     # for instance: {{theme.disqus}}
-    # vars:
-        #"disqus": "your_short_name",
-        #"analytics": "UA-21475122-1",
+    vars:
+        projects:
+            - - Warehouse
+              - "https://github.com/dstufft/warehouse"
+              - Next Generation Python Package Index
+            - - PyNaCl
+              - "https://github.com/dstufft/pynacl"
+              - Python binding to the Networking and Cryptography (NaCl) library
+            - - bcrypt
+              - "https://github.com/dstufft/bcrypt"
+              - Modern password hashing for your software and your servers
+            - - xmlrpc2
+              - "https://github.com/dstufft/xmlrpc2"
+              - xmlrpc library for Python built on requests
 
 template:
     vars:

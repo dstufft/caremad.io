@@ -16,7 +16,10 @@ Installation
     $ make install
 ```
 
-3. Start the LiquidLuck server
+3. Download the Fonts from Typography.com and put them in
+   ``_themes/caremad/static/fonts``
+
+4. Start the LiquidLuck server
 
 ```bash
     $ make serve

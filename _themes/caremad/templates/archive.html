@@ -1,19 +1,18 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 
-{% block content %}
+
+{% block main %}
   <div id="content">
     <section>
       <h2 class="section-title">Posts</h2>
       <ol class="article-list">
-        {% for article in articles_page.object_list %}
+        {% for item in pagination.items %}
           <li>
-            <time class="article-published" datetime="{{ article.date|strftime('%Y-%m-%d') }}">
-              {{ article.date|strftime('%d %B %Y') }}
+            <time class="article-published" datetime="{{ item.date.strftime('%Y-%m-%d') }}">
+              {{ item.date.strftime('%d %B %Y') }}
             </time>
             <h3 class="article-title">
-              <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}">
-                {{ article.title }}
-              </a>
+              <a href="{{ item|permalink }}" title="{{ item.title }}">{{ item.title }}</a>
             </h3>
           </li>
         {% endfor %}
@@ -23,7 +22,7 @@
     <section>
       <h2 class="section-title">Projects</h2>
       <ul class="project-list">
-        {% for project, link, description in PROJECTS %}
+        {% for project, link, description in theme.projects %}
           <li>
             <h3 class="project-title">
               <a href="{{ link }}" title="{{ project }}">{{ project }}</a>
@@ -34,4 +33,4 @@
       </ul>
     </section>
   </div>
-{% endblock content %}
+{% endblock %}
