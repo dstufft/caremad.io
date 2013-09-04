@@ -1,5 +1,5 @@
 SSH_HOST=publish.caremad.io
-SSH_TARGET_DIR=/var/www/caremad.io2
+SSH_TARGET_DIR=/var/www/caremad.io
 
 
 install:
