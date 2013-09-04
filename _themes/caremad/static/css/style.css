@@ -690,7 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 45, ../sass/style.scss */
 #banner {
-  max-width: 38em;
+  max-width: 36em;
   margin: auto;
   padding: 1em;
   border-bottom: 1px dotted #333333;
@@ -715,13 +715,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 65, ../sass/style.scss */
 #content {
-  max-width: 38em;
+  max-width: 36em;
   margin: auto;
 }
 
 /* line 70, ../sass/style.scss */
 #footer {
-  max-width: 38em;
+  max-width: 36em;
   margin: 2.8em auto 0 auto;
   padding: 1.6em 0 1.6em 0;
   border-top: 1px dotted #333333;
