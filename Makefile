@@ -13,6 +13,9 @@ clean:
 
 build: clean
 	liquidluck build -v
+	find deploy -name '*.html' -exec sh -c 'gzip -c "{}" > "{}.gz"' \;
+	find deploy -name '*.xml' -exec sh -c 'gzip -c "{}" > "{}.gz"' \;
+	find deploy -name '*.css' -exec sh -c 'gzip -c "{}" > "{}.gz"' \;
 
 upload: build
 	rsync -rz --delete $(CURDIR)/deploy/ $(SSH_HOST):$(SSH_TARGET_DIR)
