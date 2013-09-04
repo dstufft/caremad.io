@@ -8,12 +8,12 @@
       <ol class="article-list">
         {% for item in pagination.items %}
           <li>
-            <time class="article-published" datetime="{{ item.date.strftime('%Y-%m-%d') }}">
-              {{ item.date.strftime('%d %B %Y') }}
-            </time>
             <h3 class="article-title">
               <a href="{{ item|permalink }}" title="{{ item.title }}">{{ item.title }}</a>
             </h3>
+            <time class="article-published" datetime="{{ item.date.strftime('%Y-%m-%d') }}">
+              {{ item.date.strftime('%d %B %Y') }}
+            </time>
           </li>
         {% endfor %}
       </ol>

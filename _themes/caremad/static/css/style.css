@@ -752,6 +752,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 99, ../sass/style.scss */
 .article-published {
+  float: right;
   vertical-align: middle;
   padding-right: 1em;
   font-style: italic;
@@ -824,4 +825,13 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: scroll;
   font-size: 0.7em;
   color: #ffffff;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 174, ../sass/style.scss */
+  .article-published {
+    float: none;
+    display: block;
+  }
 }
