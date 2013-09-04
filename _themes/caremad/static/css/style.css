@@ -657,13 +657,13 @@ table {
 
 /* line 16, ../sass/style.scss */
 body {
-  background: url('/static/images/cream_dust.png?1378251398');
+  background: url('/static/images/cream_dust.png?1378262475');
   color: #333333;
   border-top: 5px solid #333333;
   font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 0 2em 0 2em;
 }
 
@@ -690,7 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 45, ../sass/style.scss */
 #banner {
-  max-width: 33em;
+  max-width: 38em;
   margin: auto;
   padding: 1em;
   border-bottom: 1px dotted #333333;
@@ -715,13 +715,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 65, ../sass/style.scss */
 #content {
-  max-width: 33em;
+  max-width: 38em;
   margin: auto;
 }
 
 /* line 70, ../sass/style.scss */
 #footer {
-  max-width: 33em;
+  max-width: 38em;
   margin: 2.8em auto 0 auto;
   padding: 1.6em 0 1.6em 0;
   border-top: 1px dotted #333333;
@@ -803,7 +803,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 143, ../sass/style.scss */
 .entry-content {
-  line-height: 1.6;
+  line-height: 1.8;
 }
 /* line 146, ../sass/style.scss */
 .entry-content img {
@@ -824,12 +824,4 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: scroll;
   font-size: 0.7em;
   color: #ffffff;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 173, ../sass/style.scss */
-  body {
-    font-size: 0.9em;
-  }
 }
