@@ -1,4 +1,4 @@
-# A Look at PyPI Download Statistics
+# A Look at PyPI Downloads
 
 - date: 2013-10-12
 
