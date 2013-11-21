@@ -48,15 +48,21 @@ theme:
             - - Warehouse
               - "https://github.com/pypa/warehouse"
               - Next Generation Python Package Index
+            - - pip
+              - "https://github.com/pypa/pip"
+              - The standard Python package installer
+            - - twine
+              - "https://github.com/dstufft/twine"
+              - Utilities for interacting with PyPI
             - - PyNaCl
               - "https://github.com/pyca/pynacl"
               - Python binding to the Networking and Cryptography (NaCl) library
             - - bcrypt
               - "https://github.com/pyca/bcrypt"
               - Modern password hashing for your software and your servers
-            - - twine
-              - "https://github.com/dstufft/twine"
-              - Utilities for interacting with PyPI
+            - - Cryptography
+              - "https://github.com/pyca/cryptography"
+              - Cryptographic primitives and recipes in Python
 
 template:
     vars:
