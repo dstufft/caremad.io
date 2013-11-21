@@ -46,17 +46,17 @@ theme:
     vars:
         projects:
             - - Warehouse
-              - "https://github.com/dstufft/warehouse"
+              - "https://github.com/pypa/warehouse"
               - Next Generation Python Package Index
             - - PyNaCl
-              - "https://github.com/dstufft/pynacl"
+              - "https://github.com/pyca/pynacl"
               - Python binding to the Networking and Cryptography (NaCl) library
             - - bcrypt
-              - "https://github.com/dstufft/bcrypt"
+              - "https://github.com/pyca/bcrypt"
               - Modern password hashing for your software and your servers
-            - - xmlrpc2
-              - "https://github.com/dstufft/xmlrpc2"
-              - xmlrpc library for Python built on requests
+            - - twine
+              - "https://github.com/dstufft/twine"
+              - Utilities for interacting with PyPI
 
 template:
     vars:
