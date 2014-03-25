@@ -60,7 +60,7 @@ like:
 
 ```text
 # This is an implicit value, here for clarity
---index https://pypi.python.org/simple/
+--index-url https://pypi.python.org/simple/
 
 MyPackage==1.0
 requests==1.2.0
@@ -74,7 +74,7 @@ front what version of requests was installed but you want the same version
 to install in production as you developed and tested with locally.
 
 At the top of this file you'll also notice a
-``--index https://pypi.python.org/simple/``. Your typical requirements.txt
+``--index-url https://pypi.python.org/simple/``. Your typical requirements.txt
 won't have this listed explicitly like this unless they are not using PyPI, it
 is however an important part of a ``requirements.txt``. This single line is
 what turns the abstract dependency of ``requests==1.2.0`` into a "concrete"
@@ -159,14 +159,14 @@ Given a directory with a ``setup.py`` inside of it you can write a requirements
 file that looks like:
 
 ```text
---index https://pypi.python.org/simple/
+--index-url https://pypi.python.org/simple/
 
 -e .
 ```
 
 Now your ``pip install -r requirements.txt`` will work just as before. It will
 first install the library located at the file path ``.`` and then move on to
-its abstract dependencies, combining them with its ``--index`` option and
+its abstract dependencies, combining them with its ``--index-url`` option and
 turning them into concrete dependencies and installing them.
 
 This method grants another powerful ability. Let's say you have two or more
@@ -177,7 +177,7 @@ you can install the development version when using the ``requirements.txt`` and
 the release version when not, using a file like:
 
 ```text
---index https://pypi.python.org/simple/
+--index-url https://pypi.python.org/simple/
 
 -e https://github.com/foo/bar.git#egg=bar
 -e .
