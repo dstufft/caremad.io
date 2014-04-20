@@ -34,3 +34,8 @@ at <donald@stufft.io>.
 
 [twitter]: https://twitter.com/dstufft/
 [github]: https://github.com/dstufft
+
+My PGP key fingerprint is ``7C6B 7C5D 5E2B 6356 A926 F04F 6E3C BCE9 3372 DCFA``
+and the public key can be found [here][pgp].
+
+[pgp]: /dstufft.pgp
