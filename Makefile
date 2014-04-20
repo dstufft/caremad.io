@@ -1,5 +1,5 @@
-SSH_HOST=publish.caremad.io
-SSH_TARGET_DIR=/var/www/caremad.io
+SSH_HOST=shitbird.caremad.io
+SSH_TARGET_DIR=/srv/blog
 
 
 install:
@@ -18,5 +18,5 @@ build: clean
 	find deploy -name '*.css' -exec sh -c 'gzip -c "{}" > "{}.gz"' \;
 
 upload: build
-	rsync -rz --delete $(CURDIR)/deploy/ $(SSH_HOST):$(SSH_TARGET_DIR)
-	ssh -t $(SSH_HOST) 'chgrp -R www-data $(SSH_TARGET_DIR)'
+	rsync -rz --delete --no-perms $(CURDIR)/deploy/ $(SSH_HOST):$(SSH_TARGET_DIR)
+	ssh -t $(SSH_HOST) 'chgrp -R nginx $(SSH_TARGET_DIR)'
