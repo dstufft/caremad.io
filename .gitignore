@@ -9,7 +9,7 @@ bin/
 _themes/*/.sass-cache
 
 # Generated HTML website files
-deploy/
+public/
 
 # Copywritten & Licensed Font files
 _themes/caremad/static/fonts/
