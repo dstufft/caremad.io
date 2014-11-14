@@ -1,9 +1,7 @@
-# Crate Discontinued and Under New Ownership
-
-- date: 2014-03-18
-
--------------------------------------------------------------------------------
-
+---
+title: Crate Discontinued and Under New Ownership
+date: 2014-03-18
+---
 
 This is a Post hoc announcement that as of Dec 6th, 2013 I am no longer the
 owner of the crate.io domain name. It is suggested that everyone linking to

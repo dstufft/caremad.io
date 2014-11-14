@@ -1,8 +1,7 @@
-# setup.py vs requirements.txt
-
-- date: 2013-07-22
-
--------------------------------------------------------------------------------
+---
+title: setup.py vs requirements.txt
+date: 2013-07-22
+---
 
 There's a lot of misunderstanding between ``setup.py`` and ``requirements.txt``
 and their roles. A lot of people have felt they are duplicated information and

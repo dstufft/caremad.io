@@ -1,8 +1,7 @@
-# A Look at PyPI Downloads
-
-- date: 2013-10-12
-
--------------------------------------------------------------------------------
+---
+title: A Look at PyPI Downloads
+date: 2013-10-12
+---
 
 A quick introspection into the traffic that hits the [PyPI][1] CDN, a snapshot
 of roughly 4 days of traffic. In that time PyPI served 66.7 million requests

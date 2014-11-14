@@ -1,6 +1,6 @@
-# About Donald Stufft
-
--------------------------------------------------------------------------------
+---
+title: About Donald Stufft
+---
 
 ![Donald Stufft](/images/dstufft.jpg)
 

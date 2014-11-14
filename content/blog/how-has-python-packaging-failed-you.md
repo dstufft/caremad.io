@@ -1,8 +1,7 @@
-# How has Python Packaging Failed You?
-
-- date: 2013-11-02
-
--------------------------------------------------------------------------------
+---
+title: How has Python Packaging Failed You?
+date: 2013-11-02
+---
 
 Python packaging has a lot of problems. I am one of the people who are working
 hard to fix those problems. However *I* have a problem. I know too much about
