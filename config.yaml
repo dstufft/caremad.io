@@ -1,4 +1,7 @@
 ---
+# Until Hugo v0.13 is releases, the below link needs changed to
+# http://caremad.io/ when using ``make serve``.
+baseurl: "https://caremad.io/"
 title: caremad
 languageCode: en-us
 permalinks:
