@@ -6,6 +6,7 @@
     <author>Donald Stufft</author>
     <updated>{{ .Date }}</updated>
     {{ range .Data.Pages }}
+    {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
@@ -14,6 +15,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
     </item>
+    {{ end }}
     {{ end }}
   </channel>
 </rss>
