@@ -17,13 +17,13 @@
         <div class="row-fluid">
           <div class="span12">
 
-            <div class="post">
-              <header class="post-header">
+            <article>
+              <header>
                 <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-                <div class="post-time">{{ .Date.Format "2 January 2006" }}</div>
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05+07:00" | html }}" pubdate>{{ .Date.Format "2 January 2006" }}</time>
               </header>
               <hr>
-              <div class="post-content">
+              <div class="content">
                 {{ .Content }}
               </div>
             </div>

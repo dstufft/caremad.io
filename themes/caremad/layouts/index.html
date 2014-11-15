@@ -20,9 +20,9 @@
             <div class="posts">
             {{ range .Data.Pages }}
             {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) }}
-              <article class="post">
-                <header class="post-header">
-                  <div class="post-time">{{ .Date.Format "2 Jan 2006" }}</div>
+              <article>
+                <header>
+                  <time datetime="{{ .Date.Format "2006-01-02T15:04:05+07:00" | html }}" pubdate>{{ .Date.Format "2 Jan 2006" }}</time>
                   <h1><a href="{{.RelPermalink }}">{{ .Title }}</a></h1>
                 </header>
               </article>

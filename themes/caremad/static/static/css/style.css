@@ -58,27 +58,31 @@ a:hover {
   border-bottom: 1px solid #d5d5d5;
 }
 
-.posts .post {
-  padding-bottom: 0;
+.posts article {
+  padding-bottom: 0px;
   border: none;
 }
 
-.posts .post-header {
-  padding: 0;
+.posts article header {
+  padding: 0px;
   text-align: left;
 }
 
-.posts .post-header .post-time {
-  display: inline-block;
-  margin-right: 1em;
+.posts article header time {
+  float: left;
+  width: 6rem;
+  line-height: 3rem;
 }
 
-.posts .post-header h1 {
-  display: inline-block;
+.posts article header h1 {
+  margin-left: 6.5rem;
   font-size: 1.4em;
+  line-height: 3rem;
 }
 
-.post {
+.posts article header h1 a { }
+
+article {
   margin: auto;
   padding-bottom: 1em;
   background: #fff;
@@ -86,32 +90,32 @@ a:hover {
   max-width: 700px;
 }
 
-.post-header {
+article header {
   padding: 1em 1.2em 1em 1.2em;
   text-align: center;
 }
 
-.post-header h1 {
+article header h1 {
   font-size: 1.8em;
   color: #444;
   margin-bottom: 0.5em;
 }
 
-.post-header a { color: #444; }
-.post-header a:hover { text-decoration: none; }
+article header a { color: #444; }
+article header a:hover { text-decoration: none; }
 
-.post-time {
+article header time {
   color: #707070;
   font-style: italic;
   font-weight: 300;
 }
 
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
+article .content h1,
+article .content h2,
+article .content h3,
+article .content h4,
+article .content h5,
+article .content h6 {
   padding: 1em 0 0.3em 0;
 }
 
