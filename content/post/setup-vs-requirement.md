@@ -57,7 +57,7 @@ the other packaging related metadata. This is reflected in the abilities of a
 [pip][3] requirements file. A typical requirements file might look something
 like:
 
-```text
+```ini
 # This is an implicit value, here for clarity
 --index-url https://pypi.python.org/simple/
 
@@ -157,7 +157,7 @@ turns out pip requirements file have a construct to handle just such a case.
 Given a directory with a ``setup.py`` inside of it you can write a requirements
 file that looks like:
 
-```text
+```ini
 --index-url https://pypi.python.org/simple/
 
 -e .
@@ -175,7 +175,7 @@ released it yet. If your top level library still depends on just the name then
 you can install the development version when using the ``requirements.txt`` and
 the release version when not, using a file like:
 
-```text
+```ini
 --index-url https://pypi.python.org/simple/
 
 -e https://github.com/foo/bar.git#egg=bar
