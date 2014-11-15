@@ -1,4 +1,6 @@
 ---
 title: caremad
 languageCode: en-us
+permalinks:
+  post: /:year/:month/:filename/
 ---
