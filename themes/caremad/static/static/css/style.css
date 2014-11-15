@@ -54,7 +54,7 @@ a:hover {
 }
 
 .posts {
-  padding-bottom: 20px;
+  padding-bottom: 1em;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -80,21 +80,21 @@ a:hover {
 
 .post {
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 1em;
   background: #fff;
   border-bottom: 1px solid #d5d5d5;
   max-width: 700px;
 }
 
 .post-header {
-  padding: 20px 40px 20px 40px;
+  padding: 1em 1.2em 1em 1.2em;
   text-align: center;
 }
 
 .post-header h1 {
   font-size: 1.8em;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
 
 .post-header a { color: #444; }
