@@ -47,8 +47,29 @@ a:hover {
 }
 
 .posts {
-  text-align: center;
   padding-top: 5%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.posts .post {
+  padding-bottom: 0;
+  border: none;
+}
+
+.posts .post-header {
+  padding: 0;
+  text-align: left;
+}
+
+.posts .post-header .post-time {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.posts .post-header h1 {
+  display: inline-block;
+  font-size: 1.4em;
 }
 
 .post {

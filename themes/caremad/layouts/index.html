@@ -22,8 +22,8 @@
             {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) }}
               <article class="post">
                 <header class="post-header">
+                  <div class="post-time">{{ .Date.Format "2 Jan 2006" }}</div>
                   <h1><a href="{{.RelPermalink }}">{{ .Title }}</a></h1>
-                  <div class="post-time">{{ .Date.Format "2 January 2006" }}</div>
                 </header>
               </article>
             {{ end }}
