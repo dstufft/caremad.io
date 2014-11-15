@@ -104,6 +104,8 @@ article header h1 {
 article header a { color: #444; }
 article header a:hover { text-decoration: none; }
 
+.post header a:hover { color: #444; border: none; }
+
 article header time {
   color: #707070;
   font-style: italic;
