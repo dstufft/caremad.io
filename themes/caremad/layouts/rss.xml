@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>{{ .Title }} on {{ .Site.Title }} </title>
+    <title>{{ .Title }} on {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <language>en-us</language>
     <author>Donald Stufft</author>
