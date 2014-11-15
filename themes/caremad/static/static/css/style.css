@@ -73,6 +73,12 @@ a:hover {
 .post-header a { color: #444; }
 .post-header a:hover { text-decoration: none; }
 
+.post-time {
+  color: #707070;
+  font-style: italic;
+  font-weight: 300;
+}
+
 .post-content h1,
 .post-content h2,
 .post-content h3,
