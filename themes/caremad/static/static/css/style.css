@@ -24,9 +24,8 @@ a:hover {
 }
 
 #navbar-inner {
-  min-height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
   background-color: white;
   margin: auto;
   max-width: 980px;
@@ -34,11 +33,19 @@ a:hover {
 }
 
 #logo {
-  width: 100px;
-  margin: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+
+  font-size: 2em;
+  font-weight: 400;
+
+  color: #444;
 }
 
-#logo a { border: none; }
+#logo a {
+  color: #444;
+  border: none;
+}
 
 .container {
   margin: 0 auto;
@@ -116,3 +123,8 @@ footer {
 }
 
 footer .contact { float: right; }
+
+
+@media only screen and (max-width : 360px) {
+  #logo { text-align: center; }
+}
