@@ -18,6 +18,11 @@
           <div class="span12">
 
             <div class="post">
+              <header class="post-header">
+                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+                <div class="post-time">{{ .Date.Format "January 2 2006" }}</div>
+              </header>
+              <hr>
               <div class="post-content">
                 {{ .Content }}
               </div>
