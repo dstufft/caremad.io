@@ -302,3 +302,7 @@ code, pre {
     font-family: 'Liberation Mono', Monaco, Consolas;
     font-size: 14px;
 }
+
+footer { padding: 2em 15em 4em 15em; }
+footer .about { float: left; }
+footer .contact { float: right; }
