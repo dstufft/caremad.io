@@ -10,6 +10,7 @@ _themes/*/.sass-cache
 
 # Generated HTML website files
 public/
+deploy/
 
 # Copywritten & Licensed Font files
 _themes/caremad/static/fonts/
