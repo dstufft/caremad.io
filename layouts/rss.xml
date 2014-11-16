@@ -2,16 +2,17 @@
   <channel>
     <title>{{ .Title }} on {{ .Site.Title }} </title>
     <link>https://caremad.io/feed/</link>
+    <atom:link href="https://caremad.io/feed/" rel="self" type="application/rss+xml" />
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
     {{ with .Site.Author.name }}<author>{{.}}</author>{{end}}
     {{ with .Site.Copyright }}<copyright>{{.}}</copyright>{{end}}
-    <updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</updated>
+    <description>Donald Stufft's Blog</description>
     {{ range .Data.Pages }}
     {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 06 15:04:05 -0700" | html }}</pubDate>
       {{with .Site.Author.name}}<author>{{.}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
