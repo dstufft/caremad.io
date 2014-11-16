@@ -27,7 +27,7 @@ exercise in frustration requiring a thorough understanding of the packaging
 toolchain, CFFI, and Python itself. On top of that CFFI has a sort of
 misfeature where it will implicitly compile the generated C extension if it
 cannot load one. This is incredibly handy during iterative development but can
-wreck havoc on your ability to test the installation of your project as if it
+wreak havoc on your ability to test the installation of your project as if it
 were being deployed.
 
 
