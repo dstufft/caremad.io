@@ -10,6 +10,10 @@ clean:
 
 build: clean
 	hugo --theme=caremad --destination=deploy/
+	find deploy -name '*.html' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
+	find deploy -name '*.xml' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
+	find deploy -name '*.css' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
+	find deploy -name '*.js' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
 
 upload: build
 	rsync -rz --delete --no-perms $(CURDIR)/deploy/ $(SSH_HOST):$(SSH_TARGET_DIR)
