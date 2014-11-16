@@ -10,16 +10,13 @@ Installation
     $ git clone git@github.com:dstufft/caremad.io.git
    ```
 
-2. Install the Python requirements:
-
-   ```bash
-    $ make install
-   ```
+2. Ensure that you have hugo installed: ``brew install hugo`` or download from
+   https://github.com/spf13/hugo/releases.
 
 3. Download the Fonts from Typography.com and put them in
-   ``_themes/caremad/static/fonts``
+   ``static/static/fonts/``.
 
-4. Start the LiquidLuck server
+4. Start the hugo server
 
    ```bash
     $ make serve
