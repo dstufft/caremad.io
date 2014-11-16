@@ -1,2 +1,0 @@
-liquidluck>=3.8.1
-tornado>=3.1.1
