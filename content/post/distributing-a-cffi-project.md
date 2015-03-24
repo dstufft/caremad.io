@@ -14,7 +14,7 @@ advantages over C extensions, ctypes, and SWIG:
 * Keeps all logic inside Python, allowing you to write as little non Python
   code as possible (*c extensions*).
 * It simply calls C code from Python code, it does not require learning a
-  DSL (*Cython*, *SWIG*) and it's API is very minimal (*ctypes*).
+  DSL (*Cython*, *SWIG*) and its API is very minimal (*ctypes*).
 * Works sanely and with good performance in both PyPy and CPython and has a
   reasonable path for alternative implementations to support it as well.
 
@@ -446,14 +446,14 @@ will also work with all the common binary packages like [Wheels][].
 ## Bonus: "Better" setup_requires
 
 One issue with the ``setup.py`` that I've written above is that it is going to
-install CFFI and all of it's dependencies for any invocation of ``setup.py``,
+install CFFI and all of its dependencies for any invocation of ``setup.py``,
 even just for printing out the usage information with
 ``setup.py setup.py --help``. This is due to the fact that setuptools doesn't
 really have the concept of a "build" dependency, which is what we really want
 here, but instead it only has the concept of a dependency required to execute
 the ``setup.py``. Thus setuptools installs the items listed in
 ``setup_requires`` for any invocation, because it doesn't know why that item
-is in there, just that it is required at some point in it's execution.
+is in there, just that it is required at some point in its execution.
 
 We can limit this so that setuptools will only install CFFI if required,
 however it requires adding more logic to our ``setup.py``. This isn't strictly
