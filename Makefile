@@ -3,7 +3,7 @@ SSH_TARGET_DIR=/srv/blog
 
 
 serve:
-	hugo serve --watch -b http://localhost/ --buildDrafts --buildFuture --theme=caremad
+	hugo server --watch -b http://localhost/ --buildDrafts --buildFuture --theme=caremad
 
 clean:
 	rm -rf $(CURDIR)/deploy/
