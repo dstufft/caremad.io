@@ -91,7 +91,7 @@ Python.
 Looking at these graphs, we can see that in the past year Python 3.x has grown
 from roughly 2% of the total downloads from PyPI to roughly 5-6%. For authors
 wondering what versions of Python 3.x they should support, it's easy to make
-the argument that targeting 3.4, or at the very least 3.3`is a completely
+the argument that targeting 3.4, or at the very least 3.3 is a completely
 reasonable target given that 3.2 (and to a lesser extent, 3.3) have a very tiny
 marketshare which very likely mostly consists of automated CI systems. Another
 interesting observation from these graphs is that the usage of 2.6 has more or
