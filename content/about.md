@@ -6,13 +6,13 @@ title: About
 
 Hello! I'm Donald.
 
-I'm a software engineer currently working at [Rackspace][] where I work on
-[Barbican][]. I'm also heavily involved in the Python community where I am
-a core developer for [CPython][], [Python Package Index][PyPI], [pip][],
-[virtualenv][], and a member of the [Python Infrastructure Team][python-infra].
+I'm a software engineer currently working at [HP][] where I work on improving
+Python packaging, mostly through [pip][] and [PyPI][]. I'm also heavily
+involved in the Python community where I am a core developer for [CPython][],
+[Python Package Index][PyPI], [pip][], [virtualenv][], and a member of the
+[Python Infrastructure Team][python-infra].
 
-[Rackspace]: https://rackspace.com/
-[Barbican]: https://wiki.openstack.org/wiki/Barbican
+[HP]: http://www.hpcloud.com/
 [CPython]: https://www.python.org/
 [PyPI]: https://pypi.python.org/
 [pip]: https://pip.pypa.io/
