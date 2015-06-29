@@ -3,6 +3,16 @@ title: Distributing a CFFI Project
 date: 2014-11-16T10:38:00-05:00
 ---
 
+*UPDATE: This post is outdated, it was written at a time when CFFI requires a
+number of hacks in order to sanely package it for distribution. Since this post
+was written CFFI has released its 1.0 version which includes a new API which
+makes these hacks no longer required. You can read my new blog post
+[Distributing a CFFI Project Redux][] or the [CFFI documentation][] to see how
+to distribute projects in a post CFFI 1.0 world.*
+
+[Distributing a CFFI Project Redux]: /2015/06/distributing-a-cffi-project-redux/
+[CFFI documentation]: http://cffi.readthedocs.org/en/latest/cdef.html
+
 [CFFI][] is a C Foreign Function Interface for Python. It sits somewhere
 between writing a full blown C extension and using the ctypes interface. It is
 a great way to call into C code from within Python with a few important
