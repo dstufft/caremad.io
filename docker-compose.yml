@@ -1,0 +1,38 @@
+version: "2"
+services:
+  blog:
+    container_name: caremad_blog_data
+    image: tianon/true
+    volumes:
+      - /srv/blog
+
+  uploads:
+    container_name: caremad_upload_data
+    image: tianon/true
+    volumes:
+      - /srv/uploads
+
+  openssh-keys:
+    container_name: caremad_openssh_keys
+    image: tianon/true
+    volumes:
+      - /etc/ssh/host-keys/
+
+  web:
+    build: ./docker/web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes_from:
+      - blog
+      - uploads
+
+  uploader:
+    container_name: caremad_uploader
+    build: ./docker/uploader
+    ports:
+      - "2222:22"
+    volumes_from:
+      - blog
+      - uploads
+      - openssh-keys
