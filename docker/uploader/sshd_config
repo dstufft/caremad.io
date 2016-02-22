@@ -1,7 +1,5 @@
 # HostKeys for protocol version 2
 HostKey /etc/ssh/host-keys/ssh_host_rsa_key
-HostKey /etc/ssh/host-keys/ssh_host_dsa_key
-HostKey /etc/ssh/host-keys/ssh_host_ecdsa_key
 HostKey /etc/ssh/host-keys/ssh_host_ed25519_key
 
 # Authentication:
