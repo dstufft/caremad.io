@@ -18,12 +18,19 @@ services:
     volumes:
       - /etc/ssh/host-keys/
 
+  tls-keys:
+    container_name: caremad_tls_keys
+    image: tianon/true
+    volumes:
+      - /srv/tls
+
   web:
     build: ./docker/web
     ports:
       - "80:80"
       - "443:443"
     volumes_from:
+      - tls-keys
       - blog
       - uploads
 
@@ -36,3 +43,9 @@ services:
       - blog
       - uploads
       - openssh-keys
+
+  lets-encrypt:
+    container_name: caremad_lets_encrypt
+    build: ./docker/lets_encrypt
+    volumes_from:
+      - tls-keys

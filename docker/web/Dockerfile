@@ -5,7 +5,8 @@ ENV H2O_SHA256 b905cd4c99f150495d7252cc911cfd05285dc8aa1874ffc078e57185b7b3f613d
 
 # Download, Build, and Install the H2O Web Server
 RUN set -x \
-    && apk --no-cache add --virtual build-dependencies perl build-base linux-headers cmake zlib-dev wget ca-certificates \
+    && apk --no-cache add perl openssl \
+    && apk --no-cache add --virtual build-dependencies build-base linux-headers cmake zlib-dev wget ca-certificates \
     && mkdir -p /tmp/h2o/ \
     && mkdir -p /tmp/h2o/src \
     && mkdir -p /tmp/h2o/build \
