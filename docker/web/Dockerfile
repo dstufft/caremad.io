@@ -3,6 +3,8 @@ FROM alpine:latest
 ENV H2O_VERSION 1.7.0
 ENV H2O_SHA256 b905cd4c99f150495d7252cc911cfd05285dc8aa1874ffc078e57185b7b3f613d5d0ab7950198d1431e1ed610371f3bee282f7dfef65f1575cf333267ebafa06
 
+RUN apk --no-cache add entr --repository http://nl.alpinelinux.org/alpine/edge/testing
+
 # Download, Build, and Install the H2O Web Server
 RUN set -x \
     && apk --no-cache add perl openssl \
@@ -29,4 +31,4 @@ EXPOSE 80 443
 
 # When this container runs, it's going to run the h2o binary, defaulting to our
 # standard configuration file.
-CMD ["h2o", "-c", "/etc/h2o.conf"]
+CMD ls /srv/tls/certs/*.pem | entr -r h2o -c /etc/h2o.conf
