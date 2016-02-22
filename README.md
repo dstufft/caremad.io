@@ -13,10 +13,7 @@ Installation
 2. Ensure that you have hugo installed: ``brew install hugo`` or download from
    https://github.com/spf13/hugo/releases.
 
-3. Download the Fonts from Typography.com and put them in
-   ``static/static/fonts/``.
-
-4. Start the hugo server
+3. Start the hugo server
 
    ```bash
     $ make serve
