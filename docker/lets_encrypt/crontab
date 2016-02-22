@@ -1,1 +1,1 @@
-* * * * * /usr/bin/renew-certs
+*/15 * * * * /usr/bin/renew-certs
