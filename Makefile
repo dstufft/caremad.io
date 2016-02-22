@@ -42,3 +42,6 @@ shell: .secret/docker/docker.env
 
 ps: .secret/docker/docker.env
 	bin/docker-env docker-compose ps
+
+logs: .secret/docker/docker.env
+	bin/docker-env docker-compose logs
