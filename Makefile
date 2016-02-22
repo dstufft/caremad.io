@@ -33,7 +33,9 @@ bootstrap: .secret/docker/docker.env
 
 rebuild: .secret/docker/docker.env
 	bin/docker-env docker-compose build --pull
-	bin/docker-env docker-compose restart
+	bin/docker-env docker-compose stop -t 3
+	bin/docker-env docker-compose rm -f web uploader lets-encrypt
+	bin/docker-env docker-compose up -d
 
 shell: .secret/docker/docker.env
 	bin/docker-env docker-compose run web sh
