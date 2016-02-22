@@ -14,3 +14,7 @@ deploy/
 
 # Copywritten & Licensed Font files
 static/static/fonts/
+
+# The private credentials that will get stashed here.
+.secret/Carina.mk
+.secret/docker

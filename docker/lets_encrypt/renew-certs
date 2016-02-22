@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+EMAIL=donald@stufft.io
+CERTIFICATE_DIR=/srv/tls
+DOMAINS_FILE=/etc/lets-encrypt/domains
+
+mkdir -p $CERTIFICATE_DIR/certs
+mkdir -p $CERTIFICATE_DIR/www
+
+DOMAINS=""
+while read d; do
+    DOMAINS="$DOMAINS -d $d:$CERTIFICATE_DIR/www"
+done < $DOMAINS_FILE
+
+cd $CERTIFICATE_DIR/certs
+
+simp_le --email $EMAIL -f account_key.json -f full.pem $DOMAINS
