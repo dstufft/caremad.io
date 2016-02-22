@@ -14,6 +14,8 @@ RUN set -x \
     && apk del build-dependencies \
     && rm -rf ~/.cache/
 
+ADD initial-cert /usr/bin/initial-cert
+
 ADD crontab /var/spool/cron/crontabs/root
 
 ADD renew-certs /usr/bin/renew-certs

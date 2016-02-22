@@ -26,6 +26,7 @@ upload: .secret/docker/docker.env build
 
 bootstrap: .secret/docker/docker.env
 	bin/docker-env docker-compose build --pull
+	bin/docker-env docker-compose run lets-encrypt initial-cert
 	bin/docker-env docker-compose up -d
 	bin/docker-env docker-compose run uploader sh -c 'ssh-keygen -A && mv /etc/ssh/*_host_* /etc/ssh/host-keys/'
 	bin/docker-env docker-compose up -d
