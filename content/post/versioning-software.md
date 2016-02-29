@@ -128,18 +128,18 @@ find some other, equally shallow, reason to pick between projects.
 
 The other side of this is a bit different. When you have a large major version,
 like 42.0.0, people assume that your library is not stable and that you
-regularly break compatability and if you follow SemVer strictly, it does
-actually mean that you regularly break compatability.
+regularly break compatibility and if you follow SemVer strictly, it does
+actually mean that you regularly break compatibility.
 
 I see two general cases that this happens. The first of these is what I tend to
 think of as a true positive. A project that does routinely break it's public
 API in meaningful ways that make every major version require end users to
 adjust their use of your library. While every project is free to choose
-whatever compatability policy they want, I view this as a generally reasonable
+whatever compatibility policy they want, I view this as a generally reasonable
 outcome. In parenting there is the concept of a "Natural Consequence", which
 are consequences that are the inevitable result of a child's own choices. While
 developers are often not (but sometimes are!) children, the same idea follows,
-if people who you want to use your software value stability and compatability
+if people who you want to use your software value stability and compatibility
 over constant changes, then it is an inevitable result that they are going to
 view such a project negatively. The version number isn't the problem, it is
 just honestly describing how the project is maintained, the problem is a
@@ -158,7 +158,7 @@ reality is that your project is actually quite stable.
 
 For these projects, I think that the solution isn't exactly clear because it
 depends on exactly what they're doing. In some cases, it's trivial to maintain
-compatability, for example the argument to a function had a typo in the name,
+compatibility, for example the argument to a function had a typo in the name,
 so you can instead just accept *both* names (and likely error if both are
 provided). In other cases, I think it is best to just bunch up a bunch of these
 smaller, minor improvments and land them at once or grouped with other, more
@@ -204,14 +204,14 @@ such as:
   the information that it is providing is best represented as a snapshot of the
   state of what timezones were like at a particular poin in time.
 
-* Your project is going to be breaking compatability in every release and you
-  do not want to make *any* promises of compatability. You should still
-  document this fact in your README, but if there's no promise of compatability
+* Your project is going to be breaking compatibility in every release and you
+  do not want to make *any* promises of compatibility. You should still
+  document this fact in your README, but if there's no promise of compatibility
   between releases, then there's no information to be communicated in the
   version number.
 
-* Your project is *never* going to intentionally breaking compatability in a
-  release, and you strive to always maintain compatability. Projects can
+* Your project is *never* going to intentionally breaking compatibility in a
+  release, and you strive to always maintain compatibility. Projects can
   always [^7] just use the latest version of your software. Your changes will
   only ever be additive, and if you need to change your API, you'll do
   something like leave the old API intact, and add a new API with the new
@@ -259,4 +259,4 @@ likely to be best suited.
       very minor edge cases.
 
 [^7]: "Always", in so much as it is possible to ever promise anything with
-      regards to compatability in software.
+      regards to compatibility in software.
