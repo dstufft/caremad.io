@@ -23,6 +23,10 @@ a:hover {
   border-bottom: 2px solid #fa5305;
 }
 
+pre {
+    font-family: 'Source Code Pro', monospace;
+}
+
 #navbar-inner {
   padding-left: 1em;
   padding-right: 1em;
