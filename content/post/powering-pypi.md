@@ -6,7 +6,7 @@ date: 2016-05-14
 The Python Package Index, or as most call it "PyPI" is a central part of the
 ecosystem of Python. It serves as a central registry of names, helping to
 prevent collision between different projects as well as the default repository
-that most Python users go to when looking for software. Though it has it's
+that most Python users go to when looking for software. Though it has its
 issues (of which, there are many) it functions as a critical part of the user
 experience of Python and is a critical part of the development infrastructure
 for a veritable army of developers. It may not be the largest site in the
