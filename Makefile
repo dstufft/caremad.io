@@ -7,7 +7,7 @@ clean:
 	rm -rf $(CURDIR)/deploy/
 
 build: clean
-	hugo --theme=caremad --destination=deploy/
+	hugo --theme=caremad --destination=deploy/ --buildDrafts
 	find deploy -name '*.html' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
 	find deploy -name '*.xml' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
 	find deploy -name '*.css' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
