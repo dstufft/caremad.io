@@ -129,8 +129,8 @@ to forget about dealing with HA and Master elections, fail over, and back ups.
 
 ## Elastic
 
-The Elasticsearch cluster is running on Found by Elastic, allowing us to free
-up VM resources from hosting ES to other more specialized tasks and also
+The Elasticsearch cluster is running on Elastic Cloud, allowing us to free up
+VM resources from hosting ES to other more specialized tasks and also
 alleviating the need to keep Elasticsearch monitored and operational.
 
 
