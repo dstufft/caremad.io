@@ -1,6 +1,8 @@
 ---
 title: setup.py vs requirements.txt
 date: 2013-07-22
+redirect_from:
+ - wiki/setup-vs-requirement/
 ---
 
 There's a lot of misunderstanding between ``setup.py`` and ``requirements.txt``
