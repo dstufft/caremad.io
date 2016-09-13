@@ -11,7 +11,7 @@ dependent on the reliability of that data.
 
 First we'll take a look at how PyPI has grown over the last year:
 
-![Total Downloads](/images/a-year-of-pypi-downloads/area-total-downloads.png)
+![Total Downloads](area-total-downloads.png)
 
 This graph shows how many files were downloaded from PyPI in a one week period
 of time, as you can see in January of 2014 that number was roughly 12 million
@@ -23,7 +23,7 @@ could be their browser, mirroring clients such as
 [bandersnatch](https://pypi.python.org/pypi/bandersnatch), or through an
 installer such as [pip](https://pip.pypa.io/).
 
-![Installer Traffic](/images/a-year-of-pypi-downloads/stacked-installer-pct.png)
+![Installer Traffic](stacked-installer-pct.png)
 
 We can see from this chart that pip is by far the most popular method of
 downloading files from PyPI with a share of roughly approximately 70% of all of
@@ -51,7 +51,7 @@ traffic.
 Let's take a look at what versions of pip are in play, this will give us some
 hints as to what features we can expect users of PyPI to have.
 
-![pip Versions](/images/a-year-of-pypi-downloads/stacked-pip-ver-pct.png)
+![pip Versions](stacked-pip-ver-pct.png)
 
 In this graph, the "Unknown" value typically represents versions of pip older
 that 1.4 (when pip first started identifying itself in it's user-agent),
@@ -68,7 +68,7 @@ regarded as the way forward for binary distribution on PyPI. Let's take a look
 at how many of the downloads from PyPI were downloading a Wheel file versus
 other kinds of distribution types.
 
-![Distribution Types](/images/a-year-of-pypi-downloads/stacked-dist-pct.png)
+![Distribution Types](stacked-dist-pct.png)
 
 A year later Wheels have gone from a tiny fraction of the total downloads of
 PyPI to nearly 20% on their own and in that same time Eggs have gone from ~5%
@@ -78,9 +78,9 @@ previously had to install directly from a source distribution.
 Finally let's take a look at what is probably the question which everyone is
 wondering, what versions of Python are downloading files from PyPI?
 
-![All Python Versions](/images/a-year-of-pypi-downloads/stacked-py-pct.png)
+![All Python Versions](stacked-py-pct.png)
 
-![All Python 3.x Versions](/images/a-year-of-pypi-downloads/stacked-py3-pct.png)
+![All Python 3.x Versions](stacked-py3-pct.png)
 
 This particular set of data is some of the most complete, every installer has
 indicated at least the major and minor version (``X.Y``) of the language
@@ -102,7 +102,7 @@ they might seem. When we restrict our view of the data to specific projects we
 can get vastly different results. One striking example that I've noticed was
 the [Django](https://www.djangoproject.com/) project.
 
-![Django Python Versions](/images/a-year-of-pypi-downloads/django-stacked-py-pct.png)
+![Django Python Versions](django-stacked-py-pct.png)
 
 In this graph we can see that Django has grown to an almost 20% of it's
 downloads coming from Python 3. When looking across other web frameworks such
@@ -114,7 +114,7 @@ Leaving the world of web frameworks and taking a look at one of the most
 popular downloads on PyPI, let's take a look at what versions of Python are
 downloading [requests](http://python-requests.org/).
 
-![requests Python Versions](/images/a-year-of-pypi-downloads/requests-stacked-py-pct.png)
+![requests Python Versions](requests-stacked-py-pct.png)
 
 With requests we can see that roughly 6-7% of the downloads are Python 3, which
 is a slight increase from the global numbers of 5-6% but only slightly so.

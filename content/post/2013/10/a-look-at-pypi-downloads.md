@@ -14,14 +14,14 @@ an 85% hit rate on the cache.
 
 ## Request Types
 
-![Types of Requests](/images/a-look-at-pypi-downloads/traffic_type.png)
+![Types of Requests](traffic_type.png)
 
 
 ## Python Versions
 
-![Python Versions](/images/a-look-at-pypi-downloads/python_versions.png)
+![Python Versions](python_versions.png)
 
 
 ## Installers
 
-![Installers](/images/a-look-at-pypi-downloads/installers.png)
+![Installers](installers.png)

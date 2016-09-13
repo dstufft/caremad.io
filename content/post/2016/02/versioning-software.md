@@ -37,7 +37,7 @@ projects to iterate without fear of judgement for their version number.
 
 ## SemVer is nothing but lies!
 
-![Throne of Lies](/images/versioning-software/throne-of-lies.gif)
+![Throne of Lies](throne-of-lies.gif)
 
 SemVer encodes intent into the version number and uses that as a way for the
 project to communicate that intent to its users. However, it cannot do this
@@ -105,7 +105,7 @@ fix any breakages that might occur.
 
 ## Your version is what?
 
-![I'm Judging You](/images/versioning-software/judging-you.jpg)
+![I'm Judging You](judging-you.jpg)
 
 Another major argument is that people inherently judge a project based on what
 it's version number is. They'll implicitly assume that foo 2.0 is better than
@@ -170,7 +170,7 @@ major version bump may be reasonable.
 
 ## So I should use SemVer then?
 
-![The code is more like guidelines, rather than actual rules](/images/versioning-software/guidelines-not-rules.jpg)
+![The code is more like guidelines, rather than actual rules](guidelines-not-rules.jpg)
 
 I believe that projects should generally default to SemVer-ish, following the
 spirit of the documentation rather than the letter of the specification. Your
