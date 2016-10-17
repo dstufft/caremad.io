@@ -8,7 +8,7 @@
     {{ with .Site.Copyright }}<copyright>{{.}}</copyright>{{end}}
     <description>Donald Stufft's Blog</description>
     {{ range .Data.Pages }}
-    {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) }}
+    {{ if and (not .Date.IsZero) (not (eq .Date.Year 2008)) (not .Draft) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
