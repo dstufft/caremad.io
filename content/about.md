@@ -6,13 +6,13 @@ title: About
 
 Hello! I'm Donald.
 
-I'm a software engineer currently working at [HP][] where I work on improving
-Python packaging, mostly through [pip][] and [PyPI][]. I'm also heavily
-involved in the Python community where I am a core developer for [CPython][],
-[Python Package Index][PyPI], [pip][], [virtualenv][], and a member of the
-[Python Infrastructure Team][python-infra].
+I'm a software engineer currently working at [Amazon/AWS][] where I work on
+the Python SDK for AWS as well as improving Python packaging, mostly through
+[pip][] and [PyPI][]. I'm also heavily involved in the Python community where I
+am a core developer for [CPython][], [Python Package Index][PyPI], [pip][],
+[virtualenv][], and a member of the [Python Infrastructure Team][python-infra].
 
-[HP]: http://www.hpcloud.com/
+[Amazon/AWS]: https://aws.amazon.com/
 [CPython]: https://www.python.org/
 [PyPI]: https://pypi.python.org/
 [pip]: https://pip.pypa.io/
