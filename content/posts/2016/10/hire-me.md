@@ -3,6 +3,9 @@ title: Hire me
 date: 2016-10-17
 ---
 
+*As of December 19th, 2016 I have found a new role at Amazon Web Services, for
+more information, see the post "[A New Home](/2017/01/a-new-home/)".*
+
 For the past year and a half I've been employed by Hewlett Packard Enterprise to
 work full time on improving and maintaining the Python community's packaging
 toolchain. This critical investment in the Python ecosystem has enabled me to
