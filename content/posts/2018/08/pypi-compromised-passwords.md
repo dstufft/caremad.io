@@ -100,7 +100,9 @@ in terms of downloads had 687k, 567k, 555k, 345k, and 87k respectively. To give 
 bit of perspective, in that same time frame, if you look at all of the users who
 performed some action on a project, and then expand that out to include all of the
 projects those users have access to, we can see that there were 12k total possible
-affected projects[^6], or roughly 3%.
+affected projects[^6], or roughly 3%. The total number of authentications with a
+compromised passwords that have been made in the last 24 hours are now at 66, down from
+714 in a single day prior.
 
 While it's still relatively early to pass a final judgement, so far using HIBP to "burn"
 every leaked password seems to be a successful and effective mitigation for reused and
