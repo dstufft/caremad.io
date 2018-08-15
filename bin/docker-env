@@ -1,7 +1,0 @@
-#!/bin/sh
-
-export COMPOSE_PROJECT_NAME=caremad
-
-source "$PWD/.secret/docker/docker.env"
-
-exec "$@"

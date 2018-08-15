@@ -1,13 +1,13 @@
 HOST="shitbird.caremad.io"
 
 serve:
-	hugo server --watch -b http://localhost/ --buildDrafts --buildFuture --theme=caremad
+	hugo serve -b http://localhost/ --buildDrafts --buildFuture
 
 clean:
 	rm -rf $(CURDIR)/deploy/
 
 build: clean
-	hugo --theme=caremad --destination=deploy/ --buildDrafts
+	hugo --destination=deploy/ --buildDrafts
 	find deploy -name '*.html' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
 	find deploy -name '*.xml' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;
 	find deploy -name '*.css' -exec sh -c 'gzip -9 -c "{}" > "{}.gz"' \;

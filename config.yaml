@@ -3,4 +3,5 @@ baseurl: "https://caremad.io/"
 title: caremad
 languageCode: en-us
 footnotereturnlinkcontents: "↩"
+disableKinds: ["taxonomy", "taxonomyTerm", "section"]
 ---

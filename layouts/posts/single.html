@@ -1,0 +1,22 @@
+{{ define "title" }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+  <div class="row-fluid">
+    <div class="span12">
+
+      <article class="post">
+        <header>
+          <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05+07:00" | html }}" pubdate>{{ .Date.Format "2 January 2006" }}</time>
+        </header>
+
+        <hr>
+
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </article>
+
+    </div>
+  </div>
+{{ end }}
