@@ -3,6 +3,8 @@ title: Powering the Python Package Index
 date: 2016-05-14
 ---
 
+_Note: This was published in 2016. A update for 2021 is [here](https://dustingram.com/articles/2021/04/14/powering-the-python-package-index-in-2021/)._
+
 The Python Package Index, or as most call it "PyPI" is a central part of the
 ecosystem of Python. It serves as a central registry of names, helping to
 prevent collision between different projects as well as the default repository
