@@ -47,12 +47,12 @@ total time very often looks more like 70-90 hours a week (or more!) [^3] that I
 spend doing some sort of packaging related task [^4].
 
 
-## Ernest Durbin
+## Ee Durbin
 
-When it comes to PyPI and ops, most of this has been done by Ernest. When PyPI
-migrated to it's new infrastructure host Ernest more or less single handedly
-wrote the entire salt states and pillars (339 out of 410 commits). He is one of
-the people who are *actually* on call and has been a massive help in
+When it comes to PyPI and ops, most of this has been done by Ee. When PyPI
+migrated to it's new infrastructure host Ee more or less single handedly
+wrote the entire salt states and pillars (339 out of 410 commits). They are one
+of the people who are *actually* on call and has been a massive help in
 architecting the modern PyPI infrastructure to handle the load we've placed on
 it as well as be as reliable as we can get it given the state of the code that
 powers all of this [^5].
@@ -175,13 +175,13 @@ bound to become outdated as our infrastructure changes.
 
 [^2]: I'm very rarely *actually* on call. We do have Pager Duty and Pingdom
       setup to monitor PyPI that will send notifications to a mailing list when
-      things go down and also to Ernest Durbin and Noah Kantrowitz. However,
+      things go down and also to Ee Durbin and Noah Kantrowitz. However,
       I'm fairly publicly associated with PyPI and it's rare that an issue
       occurs with it that doesn't end up with people pinging me on IRC,
       Twitter, Email, etc, often times faster than Pingdom can notice.
       Realistically the only way for me to avoid notification whenever PyPI
       has downtime is to disconnect myself completely from any public method of
-      contacting me.   
+      contacting me.
 
 [^3]: Right about here is where [Glyph](https://twitter.com/glyph) starts
       involuntarily twitching and linking me to his
